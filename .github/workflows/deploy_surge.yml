@@ -18,4 +18,4 @@ jobs:
       - name: Setup Surge
         run: npm install --global surge
       - name: Execute Deployment with Surge
-        run: surge ./http://dazzling-basketball.surge.sh --token ${{secret.SURGE_TOKEN}}
+        run: surge ./ taimur_learning_react.surge.sh --token ${{secrets.SURGE_TOKEN}}
