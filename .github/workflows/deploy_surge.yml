@@ -18,4 +18,4 @@ jobs:
       - name: Setup Surge
         run: npm install --global surge
       - name: Execute Deployment with Surge
-        run: surge ./ project001_adilaltaf.s
+        run: surge ./learning-react.surge.sh --token ${{secret.SURGE_TOKEN}}
